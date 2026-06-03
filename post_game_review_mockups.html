@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Post-Game Review Mockups — Let's Chess</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap');
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Nunito', sans-serif; background: #1a1a2e; color: #fff; display: flex; flex-direction: column; align-items: center; padding: 40px 20px; gap: 50px; }
+.label { font-size: 18px; font-weight: 900; color: #f0c040; text-align: center; margin-bottom: -20px; }
+.sublabel { font-size: 13px; color: #8899bb; text-align: center; margin-bottom: -30px; max-width: 380px; }
+.phone { width: 380px; border-radius: 28px; overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,0.5), 0 0 0 2px #2a3a5a; }
+.scr { background: linear-gradient(180deg, #0c1e42 0%, #142e5c 40%, #0e2248 100%); padding: 16px; }
+.w { color: #e8e0d0; }
+.ws { color: #8a9abb; font-size: 12px; }
+.wt { color: #f0c040; font-weight: 900; }
+.card-dark { background: rgba(15,35,75,0.7); border: 1px solid rgba(255,255,255,0.12); border-radius: 12px; padding: 12px; }
+.btn-g { background: linear-gradient(180deg, #30b858, #20903a); color: #fff; font-weight: 900; font-size: 15px; padding: 13px; border-radius: 12px; text-align: center; letter-spacing: 0.5px; }
+.btn-o { background: linear-gradient(180deg, #f0a830, #e08820); color: #fff; font-weight: 900; font-size: 15px; padding: 13px; border-radius: 12px; text-align: center; letter-spacing: 0.5px; }
+.btn-b { background: linear-gradient(180deg, #4a9adf, #3080c0); color: #fff; font-weight: 900; font-size: 15px; padding: 13px; border-radius: 12px; text-align: center; letter-spacing: 0.5px; }
+.gd { width: 8px; height: 8px; border-radius: 50%; display: inline-block; margin-right: 3px; }
+.g-br { background: #00ccaa; } .g-be { background: #22cc66; } .g-go { background: #66dd88; }
+.g-in { background: #eebb33; } .g-mi { background: #ee8833; } .g-bl { background: #ee3333; }
+.chip { padding: 3px 8px; border-radius: 6px; font-size: 11px; font-weight: 800; display: inline-flex; align-items: center; gap: 3px; }
+.acc-ring { border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; position: relative; }
+.divider { height: 1px; background: rgba(255,255,255,0.08); margin: 10px 0; }
+.tp-row { background: rgba(240,60,60,0.1); border-left: 3px solid #ee4444; }
+</style>
+</head>
+<body>
+
+<!-- ====== SCREEN 1: Result Screen ====== -->
+<div class="label">Screen 1 — Result screen</div>
+<div class="sublabel">Accuracy score preview with two-line summary. "Review Game" button added.</div>
+<div class="phone">
+<div class="scr">
+  <div style="text-align:right; margin-bottom:-20px;">
+    <span style="display:inline-flex;gap:6px;">
+      <span style="width:36px;height:36px;background:rgba(20,40,80,0.8);border:1.5px solid #3a5a8a;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:15px;">🔊</span>
+      <span style="width:36px;height:36px;background:rgba(20,40,80,0.8);border:1.5px solid #3a5a8a;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:15px;">🎙️</span>
+    </span>
+  </div>
+
+  <div style="text-align:center; margin-top: 16px;">
+    <div style="font-size: 24px;">👑</div>
+    <div class="wt" style="font-size: 28px; letter-spacing: 2px;">WINNER</div>
+  </div>
+
+  <div style="display:flex; align-items:center; justify-content:center; gap:14px; margin: 14px 0;">
+    <div class="card-dark" style="text-align:center; width:115px; border-color: rgba(240,192,64,0.4);">
+      <div style="width:52px;height:52px;border-radius:10px;background:linear-gradient(135deg,#d08040,#a06030);margin:0 auto 4px;display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:900;">A</div>
+      <div class="w" style="font-size:12px;font-weight:800;">Aditya Kumar</div>
+      <div class="ws">🇮🇳 India</div>
+    </div>
+    <div class="wt" style="font-size: 26px;">VS</div>
+    <div class="card-dark" style="text-align:center; width:115px;">
+      <div style="width:52px;height:52px;border-radius:10px;background:linear-gradient(135deg,#5080b0,#3060a0);margin:0 auto 4px;display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:900;">N</div>
+      <div class="w" style="font-size:12px;font-weight:800;">Noah Mc</div>
+      <div class="ws">🇳🇴 Norway</div>
+    </div>
+  </div>
+
+  <div style="margin: 0 20px;">
+    <div style="height:18px;background:rgba(255,255,255,0.1);border-radius:9px;overflow:hidden;">
+      <div style="height:100%;width:60%;background:linear-gradient(90deg,#f0a030,#f0c040);border-radius:9px;"></div>
+    </div>
+    <div class="ws" style="text-align:center;margin-top:4px;">Win X Games to Earn Rewards.</div>
+  </div>
+
+  <div class="card-dark" style="text-align:center; margin: 10px 0;">
+    <div class="wt" style="font-size:14px; letter-spacing:1px;">REWARDS</div>
+    <div style="display:flex;align-items:center;justify-content:center;gap:8px;margin-top:4px;">
+      <div style="width:28px;height:28px;background:linear-gradient(135deg,#c050e0,#8030c0);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:14px;">💎</div>
+      <span class="w" style="font-size:20px;font-weight:900;">+2</span>
+    </div>
+  </div>
+
+  <div class="card-dark" style="display:flex; align-items:center; gap:12px; margin: 10px 0; border-color: rgba(74,154,223,0.3); background: rgba(20,50,100,0.5);">
+    <div class="acc-ring" style="width:56px;height:56px;">
+      <svg width="56" height="56" viewBox="0 0 56 56"><circle cx="28" cy="28" r="24" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="4"/><circle cx="28" cy="28" r="24" fill="none" stroke="#22cc66" stroke-width="4" stroke-dasharray="112 151" stroke-linecap="round" transform="rotate(-90 28 28)"/></svg>
+      <div style="position:absolute;font-size:18px;font-weight:900;color:#22cc66;">74%</div>
+    </div>
+    <div>
+      <div class="w" style="font-size:13px;font-weight:800;">Well done, scope to learn</div>
+      <div class="ws" style="margin-top:2px;">2 turning points · 3 moves to learn from</div>
+    </div>
+  </div>
+
+  <div class="btn-g" style="margin: 8px 0;">REVIEW GAME</div>
+  <div style="display:flex; gap: 8px;">
+    <div class="btn-o" style="flex:1;">PLAY AGAIN</div>
+    <div class="btn-b" style="flex:1;">HOME</div>
+  </div>
+  <div style="height:12px;"></div>
+</div>
+</div>
+
+<!-- ====== SCREEN 2: Free Replay ====== -->
+<div class="label">Screen 2 — Free replay</div>
+<div class="sublabel">Move-by-move replay of the full game. Both sides visible. No analysis. Unlock banner prompts upgrade.</div>
+<div class="phone">
+<div class="scr">
+
+  <div style="display:flex; align-items:center; gap:8px; padding-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.08);">
+    <div class="w" style="font-size:16px;">←</div>
+    <div class="wt" style="font-size:16px; flex:1;">Game review</div>
+    <div class="ws">28 moves</div>
+  </div>
+
+  <!-- Unlock banner -->
+  <div style="margin: 10px 0; padding:10px 12px; border-radius:10px; display:flex; align-items:center; gap:10px; background:rgba(30,180,80,0.1); border:1px solid rgba(30,180,80,0.25);">
+    <span style="padding:3px 8px; border-radius:6px; font-size:11px; font-weight:800; background:#30a050; color:#fff;">FREE TODAY</span>
+    <span class="w" style="font-size:12px; flex:1;">Unlock full analysis — see where the game turned</span>
+    <span class="w" style="font-size:14px;">→</span>
+  </div>
+
+  <!-- Mini board -->
+  <div style="margin: 6px 0; background:#e0d4b8; border-radius:8px; border:3px solid #c0aa80; aspect-ratio:1; display:grid; grid-template-columns:repeat(8,1fr); grid-template-rows:repeat(8,1fr); overflow:hidden;" id="board1"></div>
+
+  <!-- Nav controls -->
+  <div style="display:flex; justify-content:center; gap:10px; margin: 8px 0;">
+    <div style="width:40px;height:34px;background:rgba(30,60,110,0.8);border:1.5px solid #3a6aaa;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:14px;color:#aaccee;">⏮</div>
+    <div style="width:40px;height:34px;background:rgba(30,60,110,0.8);border:1.5px solid #3a6aaa;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:14px;color:#aaccee;">◀</div>
+    <div style="width:54px;height:34px;background:rgba(30,60,110,0.8);border:1.5px solid #3a6aaa;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:#aaccee;">14/28</div>
+    <div style="width:40px;height:34px;background:rgba(30,60,110,0.8);border:1.5px solid #3a6aaa;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:14px;color:#aaccee;">▶</div>
+    <div style="width:40px;height:34px;background:rgba(30,60,110,0.8);border:1.5px solid #3a6aaa;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:14px;color:#aaccee;">⏭</div>
+  </div>
+
+  <!-- Move list (no grades) -->
+  <div class="card-dark" style="padding:0; overflow:hidden;">
+    <div style="display:flex; padding:7px 10px; border-bottom:1px solid rgba(255,255,255,0.05);">
+      <div class="ws" style="width:24px;font-weight:800;font-size:11px;">1.</div>
+      <div class="w" style="flex:1;font-size:12px;font-weight:700;">e4</div>
+      <div class="w" style="flex:1;font-size:12px;">e5</div>
+    </div>
+    <div style="display:flex; padding:7px 10px; border-bottom:1px solid rgba(255,255,255,0.05); background:rgba(255,255,255,0.02);">
+      <div class="ws" style="width:24px;font-weight:800;font-size:11px;">2.</div>
+      <div class="w" style="flex:1;font-size:12px;font-weight:700;">Nf3</div>
+      <div class="w" style="flex:1;font-size:12px;">Nc6</div>
+    </div>
+    <div style="display:flex; padding:7px 10px; border-bottom:1px solid rgba(255,255,255,0.05);">
+      <div class="ws" style="width:24px;font-weight:800;font-size:11px;">3.</div>
+      <div class="w" style="flex:1;font-size:12px;font-weight:700;">Bb5</div>
+      <div class="w" style="flex:1;font-size:12px;">a6</div>
+    </div>
+    <div style="display:flex; padding:7px 10px; border-bottom:1px solid rgba(255,255,255,0.05); background:rgba(255,255,255,0.02);">
+      <div class="ws" style="width:24px;font-weight:800;font-size:11px;">4.</div>
+      <div class="w" style="flex:1;font-size:12px;font-weight:700;">Ba4</div>
+      <div class="w" style="flex:1;font-size:12px;">Nf6</div>
+    </div>
+    <div style="display:flex; padding:7px 10px; border-bottom:1px solid rgba(255,255,255,0.05);">
+      <div class="ws" style="width:24px;font-weight:800;font-size:11px;">5.</div>
+      <div class="w" style="flex:1;font-size:12px;font-weight:700;">O-O</div>
+      <div class="w" style="flex:1;font-size:12px;">Be7</div>
+    </div>
+    <div style="display:flex; padding:7px 10px; border-bottom:1px solid rgba(255,255,255,0.05); background:rgba(255,255,255,0.02);">
+      <div class="ws" style="width:24px;font-weight:800;font-size:11px;">6.</div>
+      <div class="w" style="flex:1;font-size:12px;font-weight:700;">f4</div>
+      <div class="w" style="flex:1;font-size:12px;">exf4</div>
+    </div>
+    <div style="display:flex; padding:7px 10px; background:rgba(74,154,223,0.15);">
+      <div class="ws" style="width:24px;font-weight:800;font-size:11px;">7.</div>
+      <div class="w" style="flex:1;font-size:12px;font-weight:700;color:#4a9adf;">Bb3</div>
+      <div class="w" style="flex:1;font-size:12px;">d6</div>
+    </div>
+  </div>
+
+  <div class="btn-b" style="margin-top: 10px;">PLAY AGAIN</div>
+</div>
+</div>
+
+<script>
+(function(){
+  var pos = [
+    'r','n','b','q','k','b','n','r',
+    'p','p','p','.','.','p','p','p',
+    '.','.','.','.','.','.','.','.',
+    '.','.','.','p','p','.','.','.',
+    '.','.','.','.','P','.','.','.',
+    '.','.','.','.','.','N','.','.',
+    'P','P','P','P','.','P','P','P',
+    'R','N','B','Q','K','B','.','R'
+  ];
+  var sym = {'r':'♜','n':'♞','b':'♝','q':'♛','k':'♚','p':'♟',
+             'R':'♖','N':'♘','B':'♗','Q':'♕','K':'♔','P':'♙'};
+  var b = document.getElementById('board1');
+  if(!b) return;
+  for(var i=0;i<64;i++){
+    var r=Math.floor(i/8), c=i%8, light=(r+c)%2===0;
+    var sq=document.createElement('div');
+    sq.style.cssText='display:flex;align-items:center;justify-content:center;font-size:20px;'+(light?'background:#f0e4cc;':'background:#b0956a;');
+    if(pos[i]!=='.') sq.textContent=sym[pos[i]]||'';
+    b.appendChild(sq);
+  }
+})();
+</script>
+
+<!-- ====== SCREEN 3a: Game Analysis Summary ====== -->
+<div class="label">Screen 3a — Game analysis summary</div>
+<div class="sublabel">Summary first. "Detailed Review" button takes player into move-by-move.</div>
+<div class="phone">
+<div class="scr">
+
+  <div style="display:flex; align-items:center; gap:8px; padding-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.08);">
+    <div class="w" style="font-size:16px;">←</div>
+    <div class="wt" style="font-size:16px; flex:1;">Game analysis</div>
+    <div style="font-size:11px; color:#30a050; font-weight:800;">✓ Unlocked</div>
+  </div>
+
+  <div style="text-align:center; margin: 20px 0 6px;">
+    <div class="acc-ring" style="width:80px;height:80px; margin: 0 auto;">
+      <svg width="80" height="80" viewBox="0 0 80 80"><circle cx="40" cy="40" r="34" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="5"/><circle cx="40" cy="40" r="34" fill="none" stroke="#22cc66" stroke-width="5" stroke-dasharray="158 214" stroke-linecap="round" transform="rotate(-90 40 40)"/></svg>
+      <div style="position:absolute;font-size:26px;font-weight:900;color:#22cc66;">74%</div>
+    </div>
+    <div class="wt" style="font-size:16px; margin-top:8px;">Nice game — room to grow!</div>
+    <div class="ws" style="margin-top:2px;">28 moves · 2 turning points</div>
+  </div>
+
+  <div style="display:flex; flex-wrap:wrap; gap:5px; justify-content:center; margin: 14px 0;">
+    <div class="chip" style="background:rgba(0,204,170,0.15); color:#00ccaa;"><span class="gd g-br"></span>1</div>
+    <div class="chip" style="background:rgba(34,204,102,0.15); color:#22cc66;"><span class="gd g-be"></span>7</div>
+    <div class="chip" style="background:rgba(102,221,136,0.15); color:#66dd88;"><span class="gd g-go"></span>12</div>
+    <div class="chip" style="background:rgba(238,187,51,0.15); color:#eebb33;"><span class="gd g-in"></span>5</div>
+    <div class="chip" style="background:rgba(238,136,51,0.15); color:#ee8833;"><span class="gd g-mi"></span>2</div>
+    <div class="chip" style="background:rgba(238,51,51,0.15); color:#ee3333;"><span class="gd g-bl"></span>1</div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div style="margin: 8px 0;">
+    <div class="ws" style="font-weight:800; text-transform:uppercase; letter-spacing:0.5px; margin-bottom:8px; font-size:10px;">Hint impact</div>
+    <div style="display:flex; justify-content:space-between; margin:4px 0;">
+      <span class="ws">Hints followed</span>
+      <span class="w" style="font-size:12px;font-weight:800;">12 of 28 moves</span>
+    </div>
+    <div style="display:flex; justify-content:space-between; margin:4px 0;">
+      <span class="ws">Best Move reveals</span>
+      <span class="w" style="font-size:12px;font-weight:800;">3 used — all top picks ✓</span>
+    </div>
+    <div style="margin-top:6px; padding:6px 8px; background:rgba(30,180,80,0.1); border-radius:6px; border:1px solid rgba(30,180,80,0.15); font-size:11px; color:#66ddaa; font-weight:700;">
+      Hints guided you well — your hint moves were stronger
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="btn-g" style="margin: 12px 0 8px; display:flex; align-items:center; justify-content:center; gap:8px;">
+    <span>DETAILED REVIEW</span>
+    <span style="font-size:12px; opacity:0.8;">→</span>
+  </div>
+
+  <div style="display:flex; gap: 8px;">
+    <div class="btn-o" style="flex:1;">PLAY AGAIN</div>
+    <div class="btn-b" style="flex:1;">HOME</div>
+  </div>
+</div>
+</div>
+
+<!-- ====== SCREEN 3b: Detailed Review ====== -->
+<div class="label">Screen 3b — Detailed review</div>
+<div class="sublabel">Board at top with eval bar. Navigation controls. Move list below with grades and comments on key moves.</div>
+<div class="phone">
+<div class="scr" style="padding-bottom: 20px;">
+
+  <div style="display:flex; align-items:center; gap:8px; padding-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.08);">
+    <div class="w" style="font-size:16px;">←</div>
+    <div class="wt" style="font-size:16px; flex:1;">Detailed review</div>
+    <div style="font-size:14px;font-weight:900;color:#22cc66;">74%</div>
+  </div>
+
+  <!-- Board showing position at move 6 (the blunder) -->
+  <div style="margin:8px 0 0; background:#e0d4b8; border-radius:8px; border:3px solid #c0aa80; aspect-ratio:1; display:grid; grid-template-columns:repeat(8,1fr); grid-template-rows:repeat(8,1fr); overflow:hidden; position:relative;" id="board2"></div>
+
+  <!-- Eval bar -->
+  <div style="display:flex; align-items:center; gap:8px; margin: 6px 0;">
+    <div style="flex:1; height:6px; background:rgba(255,255,255,0.1); border-radius:3px; overflow:hidden;">
+      <div style="height:100%; width:35%; background:#ee4444; border-radius:3px;"></div>
+    </div>
+    <div style="font-size:11px; color:#ee6666; font-weight:800;">−1.8</div>
+  </div>
+
+  <!-- Nav controls -->
+  <div style="display:flex; justify-content:center; gap:8px; margin: 4px 0;">
+    <div style="width:36px;height:30px;background:rgba(30,60,110,0.8);border:1.5px solid #3a6aaa;border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:12px;color:#aaccee;">⏮</div>
+    <div style="width:36px;height:30px;background:rgba(30,60,110,0.8);border:1.5px solid #3a6aaa;border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:12px;color:#aaccee;">◀</div>
+    <div style="width:48px;height:30px;background:rgba(30,60,110,0.8);border:1.5px solid #3a6aaa;border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:800;color:#aaccee;">6/28</div>
+    <div style="width:36px;height:30px;background:rgba(30,60,110,0.8);border:1.5px solid #3a6aaa;border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:12px;color:#aaccee;">▶</div>
+    <div style="width:36px;height:30px;background:rgba(30,60,110,0.8);border:1.5px solid #3a6aaa;border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:12px;color:#aaccee;">⏭</div>
+  </div>
+
+  <!-- Graded move list, compact and scrollable -->
+  <div class="card-dark" style="padding:0; overflow:hidden; margin-top: 6px; max-height:180px; overflow-y:auto;">
+
+    <div style="display:flex; align-items:center; padding:6px 10px; border-bottom:1px solid rgba(255,255,255,0.05);">
+      <div class="ws" style="width:22px;font-weight:800;font-size:10px;">1.</div>
+      <div class="w" style="flex:1;font-size:12px;font-weight:700;"><span class="gd g-be"></span>e4</div>
+      <div class="w" style="flex:1;font-size:12px;">e5</div>
+    </div>
+    <div style="display:flex; align-items:center; padding:6px 10px; border-bottom:1px solid rgba(255,255,255,0.05); background:rgba(255,255,255,0.02);">
+      <div class="ws" style="width:22px;font-weight:800;font-size:10px;">2.</div>
+      <div class="w" style="flex:1;font-size:12px;font-weight:700;"><span class="gd g-go"></span>Nf3</div>
+      <div class="w" style="flex:1;font-size:12px;">Nc6</div>
+    </div>
+    <div style="display:flex; align-items:center; padding:6px 10px; border-bottom:1px solid rgba(255,255,255,0.05);">
+      <div class="ws" style="width:22px;font-weight:800;font-size:10px;">3.</div>
+      <div class="w" style="flex:1;font-size:12px;font-weight:700;"><span class="gd g-br"></span>Bb5!!</div>
+      <div class="w" style="flex:1;font-size:12px;">a6</div>
+    </div>
+    <div style="padding:4px 10px 5px 32px; background:rgba(0,204,170,0.08); border-bottom:1px solid rgba(255,255,255,0.05); font-size:10px; color:#66ddcc; font-weight:700;">
+      Brilliant — only move that keeps the pressure
+    </div>
+    <div style="display:flex; align-items:center; padding:6px 10px; border-bottom:1px solid rgba(255,255,255,0.05); background:rgba(255,255,255,0.02);">
+      <div class="ws" style="width:22px;font-weight:800;font-size:10px;">4.</div>
+      <div class="w" style="flex:1;font-size:12px;font-weight:700;"><span class="gd g-go"></span>Ba4</div>
+      <div class="w" style="flex:1;font-size:12px;">Nf6</div>
+    </div>
+    <div style="display:flex; align-items:center; padding:6px 10px; border-bottom:1px solid rgba(255,255,255,0.05);">
+      <div class="ws" style="width:22px;font-weight:800;font-size:10px;">5.</div>
+      <div class="w" style="flex:1;font-size:12px;font-weight:700;"><span class="gd g-in"></span>O-O</div>
+      <div class="w" style="flex:1;font-size:12px;">Be7</div>
+    </div>
+
+    <!-- Current move highlighted — the blunder / turning point -->
+    <div class="tp-row" style="display:flex; align-items:center; padding:6px 10px; border-bottom:1px solid rgba(255,255,255,0.05); background:rgba(74,154,223,0.15);">
+      <div class="ws" style="width:22px;font-weight:800;font-size:10px;">6.</div>
+      <div class="w" style="flex:1;font-size:12px;font-weight:700;"><span class="gd g-bl"></span>f4??</div>
+      <div class="w" style="flex:1;font-size:12px;">exf4</div>
+      <div style="font-size:8px;color:#ee6666;font-weight:800;">⚡ TURNING POINT</div>
+    </div>
+    <div style="padding:5px 10px 6px; background:rgba(30,100,60,0.12); border-bottom:1px solid rgba(255,255,255,0.05);">
+      <div style="font-size:10px; color:#8a9abb;">Engine preferred <span style="color:#22cc66;font-weight:800;">d3</span> → d6 → Nc3 (+0.4)</div>
+      <div style="font-size:9px; color:#f0c060; font-weight:700; margin-top:2px;">💡 Hint 2 was d3 — Best Move would have helped</div>
+    </div>
+
+    <div style="display:flex; align-items:center; padding:6px 10px; border-bottom:1px solid rgba(255,255,255,0.05); background:rgba(255,255,255,0.02);">
+      <div class="ws" style="width:22px;font-weight:800;font-size:10px;">7.</div>
+      <div class="w" style="flex:1;font-size:12px;font-weight:700;"><span class="gd g-mi"></span>d3?</div>
+      <div class="w" style="flex:1;font-size:12px;">d5</div>
+    </div>
+    <div style="padding:4px 10px 5px 32px; background:rgba(238,136,51,0.06); border-bottom:1px solid rgba(255,255,255,0.05); font-size:10px; color:#ee9955;">
+      Bxf4 recovers the pawn immediately
+    </div>
+
+    <div style="display:flex; align-items:center; padding:6px 10px; border-bottom:1px solid rgba(255,255,255,0.05);">
+      <div class="ws" style="width:22px;font-weight:800;font-size:10px;">8.</div>
+      <div class="w" style="flex:1;font-size:12px;font-weight:700;"><span class="gd g-go"></span>Bxf4</div>
+      <div class="w" style="flex:1;font-size:12px;">dxe4</div>
+    </div>
+
+    <div class="tp-row" style="display:flex; align-items:center; padding:6px 10px;">
+      <div class="ws" style="width:22px;font-weight:800;font-size:10px;">9.</div>
+      <div class="w" style="flex:1;font-size:12px;font-weight:700;"><span class="gd g-mi"></span>Ng5?</div>
+      <div class="w" style="flex:1;font-size:12px;">Qd4+</div>
+      <div style="font-size:8px;color:#ee6666;font-weight:800;">⚡ TURNING POINT</div>
+    </div>
+    <div style="padding:4px 10px 5px 32px; background:rgba(238,136,51,0.06); font-size:10px; color:#ee9955;">
+      Nc3 was safer — developing with tempo
+    </div>
+  </div>
+
+  <div class="btn-b" style="margin-top: 10px;">PLAY AGAIN</div>
+</div>
+</div>
+
+<script>
+(function(){
+  var pos = [
+    'r','n','b','q','k','b','.','r',
+    'p','p','p','.','.','p','p','p',
+    '.','.','.','.','.','.','.','.',
+    '.','.','.','.','.','.','.','.',
+    '.','.','.','.','.','p','.','.',
+    '.','.','.','.','.','.','.','.',
+    'P','P','P','P','P','.','P','P',
+    'R','N','B','Q','K','B','.','R'
+  ];
+  var sym = {'r':'♜','n':'♞','b':'♝','q':'♛','k':'♚','p':'♟',
+             'R':'♖','N':'♘','B':'♗','Q':'♕','K':'♔','P':'♙'};
+  var hl = {29:true, 37:true};
+  var b = document.getElementById('board2');
+  if(!b) return;
+  for(var i=0;i<64;i++){
+    var r=Math.floor(i/8), c=i%8, light=(r+c)%2===0;
+    var sq=document.createElement('div');
+    var bg = light ? '#f0e4cc' : '#b0956a';
+    if(hl[i]) bg = light ? '#f0c8c8' : '#cc8888';
+    sq.style.cssText='display:flex;align-items:center;justify-content:center;font-size:20px;background:'+bg+';';
+    if(pos[i]!=='.') sq.textContent=sym[pos[i]]||'';
+    b.appendChild(sq);
+  }
+})();
+</script>
+
+<div style="height:40px;"></div>
+</body>
+</html>
